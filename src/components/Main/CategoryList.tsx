@@ -63,7 +63,14 @@ const CategoryList: FunctionComponent<CategoryListProps> = function ({
           active={name === selectedCategory}
           key={name}
         >
-          #{name}({count})
+          {name === 'Web'
+            ? '💻'
+            : name === 'BlockChain'
+            ? '🔐'
+            : name === 'Etc'
+            ? '📚'
+            : '😎'}{' '}
+          {name}({count})
         </CategoryItem>
       ))}
     </CategoryListWrapper>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://ysonbrian.github.io/sitemap/sitemap-index.xml
+Host: https://ysonbrian.github.io

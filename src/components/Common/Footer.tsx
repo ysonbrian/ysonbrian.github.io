@@ -1,5 +1,9 @@
 import React, { FunctionComponent } from 'react'
 import styled from '@emotion/styled'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faGithub } from '@fortawesome/free-solid-svg-icons'
+import { FaGithub } from 'react-icons/fa'
+import { SiGmail } from 'react-icons/si'
 
 const FooterWrapper = styled.footer`
   display: grid;
@@ -15,11 +19,34 @@ const FooterWrapper = styled.footer`
   }
 `
 
+const FooterUnOrderList = styled.ul`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+`
+
 const Footer: FunctionComponent = function () {
   return (
     <FooterWrapper>
+      <FooterUnOrderList>
+        <li>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=ysonbrian@gmail.com"
+            target="_blank"
+          >
+            <SiGmail size="30px" />
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ysonbrian" target="_blank">
+            <FaGithub size="30px" />
+          </a>
+        </li>
+      </FooterUnOrderList>
       <br />
-      ©Youngduk Son • 2021
+      <div> ©Youngduk Son • 2021</div>
     </FooterWrapper>
   )
 }

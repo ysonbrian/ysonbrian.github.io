@@ -1,7 +1,5 @@
 import React, { FunctionComponent } from 'react'
 import styled from '@emotion/styled'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faGithub } from '@fortawesome/free-solid-svg-icons'
 import { FaGithub } from 'react-icons/fa'
 import { SiGmail } from 'react-icons/si'
 

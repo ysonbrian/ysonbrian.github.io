@@ -91,6 +91,8 @@ module.exports = {
     'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-robots-txt',
+      host: 'https://ysonbrian.github.io/',
+      sitemap: 'https://ysonbrian.github.io/sitemap/sitemap-index.xml',
       options: {
         policy: [{ userAgent: '*', allow: '/' }],
       },

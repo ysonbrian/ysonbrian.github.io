@@ -64,7 +64,7 @@ router.post('/newMnemonic', async (req, res) => {
 })
 ```
 
-![결과](./Mn1.png)
+![결과](../../ydblog/contents/Mn1.png)
 
 응답으로 니모닉 코드를 확인할 수 있다. 이 코드를 통해 우리가 만든 지갑에 쉽게 접근 가능하다. 만약 니모닉 코드가 아니였다면 문자 하나가 달라져도 해시값이 달라지는 SHA-256 알고리즘에 의해 그 한문자를 찾아서 고쳐야 하지만 니모닉코드는 찾기 쉽다.
 
@@ -106,11 +106,11 @@ router.post('/newWallet', async (req, res) => {
 })
 ```
 
-![결과](./Mn2.png)
+![결과](../../ydblog/contents/Mn2.png)
 
 결과를 보면 알 수 있듯이 keystore의 주소와 구현 형태를 알 수 있다. 하지만 보기가 어렵기 때문에 json형태로 local서버에 저장하고 결과값을 확인하자
 
-![결과](./Mn3.png)
+![결과](../../ydblog/contents/Mn3.png)
 
 ```javascript
 {

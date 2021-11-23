@@ -84,73 +84,74 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://ysonbrian.github.io/',
+        siteUrl: 'https://ysonbrian.github.io',
         stripQueryString: true,
       },
     },
-    {
-      resolve: 'gatsby-plugin-sitemap',
-      options: {
-        output: '/',
-        query: `
-      {
-        site {
-          siteMetadata {
-            siteUrl
-          }
-        }
-        allSitePage {
-          nodes {
-            path
-          }
-        }
-        allMarkdownRemark {
-          nodes {
-            frontmatter {
-              date
-            },
-            fields {
-              slug
-            }
-          }
-        }
-      }`,
-      },
-      resolvePages: ({
-        allSitePage: { nodes: allPages },
-        allMarkdownRemark: { nodes: allPosts },
-      }) => {
-        const pathToDateMap = {}
+    // {
+    //   resolve: 'gatsby-plugin-sitemap',
+    //   options: {
+    //     output: '/',
+    //     query: `
+    //   {
+    //     site {
+    //       siteMetadata {
+    //         siteUrl
+    //       }
+    //     }
+    //     allSitePage {
+    //       nodes {
+    //         path
+    //       }
+    //     }
+    //     allMarkdownRemark {
+    //       nodes {
+    //         frontmatter {
+    //           date
+    //         },
+    //         fields {
+    //           slug
+    //         }
+    //       }
+    //     }
+    //   }`,
+    //   },
+    //   resolvePages: ({
+    //     allSitePage: { nodes: allPages },
+    //     allMarkdownRemark: { nodes: allPosts },
+    //   }) => {
+    //     const pathToDateMap = {}
 
-        allPosts.map(post => {
-          pathToDateMap[post.fields.slug] = { date: post.frontmatter.date }
-        })
+    //     allPosts.map(post => {
+    //       pathToDateMap[post.fields.slug] = { date: post.frontmatter.date }
+    //     })
 
-        const pages = allPages.map(page => {
-          return { ...page, ...pathToDateMap[page.path] }
-        })
+    //     const pages = allPages.map(page => {
+    //       return { ...page, ...pathToDateMap[page.path] }
+    //     })
 
-        return pages
-      },
-      serialize: ({ path, date }) => {
-        let entry = {
-          url: path,
-          changefreq: 'daily',
-          priority: 0.5,
-        }
+    //     return pages
+    //   },
+    //   serialize: ({ path, date }) => {
+    //     let entry = {
+    //       url: path,
+    //       changefreq: 'daily',
+    //       priority: 0.5,
+    //     }
 
-        if (date) {
-          entry.priority = 0.7
-          entry.lastmod = date
-        }
+    //     if (date) {
+    //       entry.priority = 0.7
+    //       entry.lastmod = date
+    //     }
 
-        return entry
-      },
-    },
+    //     return entry
+    //   },
+    // },
+    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-robots-txt',
-      host: 'https://ysonbrian.github.io/',
-      sitemap: 'https://ysonbrian.github.io/sitemap-index.xml',
+      host: 'https://ysonbrian.github.io',
+      sitemap: 'https://ysonbrian.github.io/sitemap/sitemap-0.xml',
       options: {
         policy: [{ userAgent: '*', allow: '/' }],
       },

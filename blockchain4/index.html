@@ -49,7 +49,54 @@
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
-<p><img src="/Users/brianson/Documents/Blog/ydblog/static/Mn1.png" alt="결과"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 768px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/18affebbfe82e650cb0a2df66f4b3da4/0e092/Mn1.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 44.27083333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA7klEQVQoz5VRi24DIQzj27ff2r7odtyuvJKQ4A3WUq1PNZJlULAdwO37jhgjtm2D9x7r+jXWKSWUUgZ35JxvIqUMk4L3z4i3jww3RSEgxID92w/uISGEYdpa+wczg6rOPdAQSLFGgetT9aRmNg52NGtDQERXZr2Y+apnWsGU4ZZlGc1el+J7mMGXPQDumfAlw9bg8KRuiR6VKzmPNylMYCKo1pl+tJw4GdZawcLgKpAqg0NRFDG4zXuEw+HvV2NETBkpJogIrH+OtcEdp5B57XaGVAOLwIkqOGdorSBRsCiIFYXrBB353rvNyX8NfwCnQcM+T1UP6gAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/18affebbfe82e650cb0a2df66f4b3da4/a59e9/Mn1.webp 192w,
+/static/18affebbfe82e650cb0a2df66f4b3da4/0ca9f/Mn1.webp 384w,
+/static/18affebbfe82e650cb0a2df66f4b3da4/dc9b9/Mn1.webp 768w,
+/static/18affebbfe82e650cb0a2df66f4b3da4/e2c2f/Mn1.webp 1152w,
+/static/18affebbfe82e650cb0a2df66f4b3da4/f3efb/Mn1.webp 1536w,
+/static/18affebbfe82e650cb0a2df66f4b3da4/17a73/Mn1.webp 2530w"
+              sizes="(max-width: 768px) 100vw, 768px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/18affebbfe82e650cb0a2df66f4b3da4/3b721/Mn1.png 192w,
+/static/18affebbfe82e650cb0a2df66f4b3da4/66595/Mn1.png 384w,
+/static/18affebbfe82e650cb0a2df66f4b3da4/fe486/Mn1.png 768w,
+/static/18affebbfe82e650cb0a2df66f4b3da4/d2d74/Mn1.png 1152w,
+/static/18affebbfe82e650cb0a2df66f4b3da4/e8464/Mn1.png 1536w,
+/static/18affebbfe82e650cb0a2df66f4b3da4/0e092/Mn1.png 2530w"
+            sizes="(max-width: 768px) 100vw, 768px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/18affebbfe82e650cb0a2df66f4b3da4/fe486/Mn1.png"
+            alt="결과"
+            title="결과"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
 <p>응답으로 니모닉 코드를 확인할 수 있다. 이 코드를 통해 우리가 만든 지갑에 쉽게 접근 가능하다. 만약 니모닉 코드가 아니였다면 문자 하나가 달라져도 해시값이 달라지는 SHA-256 알고리즘에 의해 그 한문자를 찾아서 고쳐야 하지만 니모닉코드는 찾기 쉽다.</p>
 <div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript">router<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/newWallet'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span> res</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span>
   <span class="token keyword">let</span> password <span class="token operator">=</span> req<span class="token punctuation">.</span>body<span class="token punctuation">.</span>password <span class="token comment">// 위에서 요청받은 비밀번호와</span>
@@ -86,9 +133,103 @@
     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'NewWallet ==>>>> '</span> <span class="token operator">+</span> exception<span class="token punctuation">)</span>
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span class="token punctuation">)</span></code></pre></div>
-<p><img src="/Users/brianson/Documents/Blog/ydblog/static/Mn2.png" alt="결과"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 768px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/9dea4018c2bd126916c7610e56cc0fe7/f7945/Mn2.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 57.29166666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABWElEQVQoz5VS2W7DIBDkt/tP/YB+Rx97RKma2Elz+GA5F5hqsZNIkduqK43Bs8zAsqhhGGCMQd/36LoO59MRfd9Vzlp7Hb33cM5VyDyEAOcmLkWPx2eHhycLJQkRWENVTKRh7GRCRFVwHzlnxBjvWUTvodq2hdYapZQZmFEqL8ZiWjed53IIwU1TwCnVnJJS75OCyylkXMot8RLqcuD75GXBEv8bFH6I8m+zSaf68wlGGmBNbYp0kGNESWlxG9ExM3z0CBwROCByxGgZ5BhKE8GQhpcnYh2s87DWwfmAwBkxZUSekHNZ6HhBvjSGeSo5cUJzIKz3hLdmrHjdjli1I97bEaudrtzLdqh43Q71f73XaE4GPYXrfSv5pJyxORp87PUMqmb7zmF3tlX0eSA0Jzut+yJsDgbt2cJ4rpX4mJBShhIzDh7BB5Bn2BlyHyEm/BVJSs63kr8BuFNbQWp/mk8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/9dea4018c2bd126916c7610e56cc0fe7/a59e9/Mn2.webp 192w,
+/static/9dea4018c2bd126916c7610e56cc0fe7/0ca9f/Mn2.webp 384w,
+/static/9dea4018c2bd126916c7610e56cc0fe7/dc9b9/Mn2.webp 768w,
+/static/9dea4018c2bd126916c7610e56cc0fe7/e2c2f/Mn2.webp 1152w,
+/static/9dea4018c2bd126916c7610e56cc0fe7/f3efb/Mn2.webp 1536w,
+/static/9dea4018c2bd126916c7610e56cc0fe7/d3945/Mn2.webp 2504w"
+              sizes="(max-width: 768px) 100vw, 768px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/9dea4018c2bd126916c7610e56cc0fe7/3b721/Mn2.png 192w,
+/static/9dea4018c2bd126916c7610e56cc0fe7/66595/Mn2.png 384w,
+/static/9dea4018c2bd126916c7610e56cc0fe7/fe486/Mn2.png 768w,
+/static/9dea4018c2bd126916c7610e56cc0fe7/d2d74/Mn2.png 1152w,
+/static/9dea4018c2bd126916c7610e56cc0fe7/e8464/Mn2.png 1536w,
+/static/9dea4018c2bd126916c7610e56cc0fe7/f7945/Mn2.png 2504w"
+            sizes="(max-width: 768px) 100vw, 768px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/9dea4018c2bd126916c7610e56cc0fe7/fe486/Mn2.png"
+            alt="결과"
+            title="결과"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
 <p>결과를 보면 알 수 있듯이 keystore의 주소와 구현 형태를 알 수 있다. 하지만 보기가 어렵기 때문에 json형태로 local서버에 저장하고 결과값을 확인하자</p>
-<p><img src="/Users/brianson/Documents/Blog/ydblog/static/Mn3.png" alt="결과"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 768px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/decfedf6eebd9d14628f413b2f8dc3d4/9f53d/Mn3.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 44.79166666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA8klEQVQoz5VSC27DIAzlnrvgdptdY1L+BgcM+E04QW3XtNIsPdmO4fmZ2K3rCu89lmXBOI0YhwHTNCGEAGY2fxV3kGegML6+GR+fBBdjPA4TGfG2LiDa7GLLW01VcW8tL6WYt5oqYq74WQVunmc0lbXWJxCREbem+74bWtzzdqaTai2Ie4AbhsEu9s73SCkh52xq/uKBrAOA6+M8Ffs4F9a+XxKqwuGN/adJN8eejjc5ISKvRzrJWj1JQsoCyWI+xAK/F7i2Ltu2IXBbh9tKZElvlVethiNWlKpIkuGKKpgIwmy/viup5zu9woPyqucqZfwCU1vC7f553rkAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <picture>
+          <source
+              srcset="/static/decfedf6eebd9d14628f413b2f8dc3d4/a59e9/Mn3.webp 192w,
+/static/decfedf6eebd9d14628f413b2f8dc3d4/0ca9f/Mn3.webp 384w,
+/static/decfedf6eebd9d14628f413b2f8dc3d4/dc9b9/Mn3.webp 768w,
+/static/decfedf6eebd9d14628f413b2f8dc3d4/e2c2f/Mn3.webp 1152w,
+/static/decfedf6eebd9d14628f413b2f8dc3d4/f3efb/Mn3.webp 1536w,
+/static/decfedf6eebd9d14628f413b2f8dc3d4/0fdde/Mn3.webp 2508w"
+              sizes="(max-width: 768px) 100vw, 768px"
+              type="image/webp"
+            />
+          <source
+            srcset="/static/decfedf6eebd9d14628f413b2f8dc3d4/3b721/Mn3.png 192w,
+/static/decfedf6eebd9d14628f413b2f8dc3d4/66595/Mn3.png 384w,
+/static/decfedf6eebd9d14628f413b2f8dc3d4/fe486/Mn3.png 768w,
+/static/decfedf6eebd9d14628f413b2f8dc3d4/d2d74/Mn3.png 1152w,
+/static/decfedf6eebd9d14628f413b2f8dc3d4/e8464/Mn3.png 1536w,
+/static/decfedf6eebd9d14628f413b2f8dc3d4/9f53d/Mn3.png 2508w"
+            sizes="(max-width: 768px) 100vw, 768px"
+            type="image/png"
+          />
+          <img
+            class="gatsby-resp-image-image"
+            src="/static/decfedf6eebd9d14628f413b2f8dc3d4/fe486/Mn3.png"
+            alt="결과"
+            title="결과"
+            loading="lazy"
+            decoding="async"
+            style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+          />
+        </picture>
+  </a>
+    </span></p>
 <div class="gatsby-highlight" data-language="javascript"><pre class="language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
   <span class="token string">"encSeed"</span><span class="token operator">:</span> <span class="token punctuation">{</span>
     <span class="token string">"encStr"</span><span class="token operator">:</span> <span class="token string">"rrvU90nKF8b+jerdoDDhMyr7qplFnLFT5+ZxuRYZh4jYYIkq1NTLmKOYK0NhEKtpSDTGLZ6vcYMO2qIxnXCM8/Ks6VTmv//HSZHh0OTQFn8OpP6FS85G8BeyKIl45pNsWU8HC2QrJ8j6U9l/e77KWOHQLxqxI9DvYchwBXo1z+6nauvTAlvTBQ=="</span><span class="token punctuation">,</span>

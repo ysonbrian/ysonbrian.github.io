@@ -151,7 +151,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       host: 'https://ysonbrian.github.io',
-      sitemap: 'https://ysonbrian.github.io/sitemap/sitemap-0.xml',
+      sitemap: 'https://ysonbrian.github.io/sitemap/sitemap-index.xml',
       options: {
         policy: [{ userAgent: '*', allow: '/' }],
       },

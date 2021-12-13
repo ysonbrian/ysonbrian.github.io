@@ -9,7 +9,7 @@ thumbnail: './block8.jpg'
 ## Klaytn 개발 환경에서 NFT 개발
 
 오늘은 Klaytn IDE를 이용하여 NFT를 만들어 보겠습니다 🙂
-**ERC-721 (Non-Fungible Token)**을 먼저 이해하면 훨씬 따라오기 쉬우니 먼저 [Truffle을 이용한 ERC-721 개발](https://ysonbrian.github.io/blockchain7/) 편 을 보고 와주세요!
+**ERC-721 (Non-Fungible Token)** 을 먼저 이해하면 훨씬 따라오기 쉬우니 먼저 [Truffle을 이용한 ERC-721 개발](https://ysonbrian.github.io/blockchain7/) 편 을 보고 와주세요!
 
 ### KIP-17
 
@@ -46,7 +46,7 @@ Solidity를 사용하기 편리한 Remix가 있는 것처럼 그라운드X는 [K
 ![klaytnUri](../../ydblog/contents/klaytnUri.gif)
 저번 시간 IPFS 에서 발행한 NFT 파일의 URI 주소를 사용 했습니다. [사용한 URI](https://ipfs.io/ipfs/QmdwDwerocYHSQ2CRKuaDYDCSdTMi7v29sF13CJfLxSV3y?filename=nft.json) 를 이용 하셔도 되니 만들기 귀찮으신 분들은 맘것 사용하세요~
 
-<img src="../../ydblog/contents/klaytnResult.png" width="500">|
+<img src="../../ydblog/contents/klaytnResult.png" width="500">
 
 결과를 확인해보면 확인해 볼수 있네요! 그럼 한번 직접 트랜잭션을 확인해보죠!
 
@@ -62,6 +62,6 @@ Solidity를 사용하기 편리한 Remix가 있는 것처럼 그라운드X는 [K
 
 > 모든 코드는 [여기](https://github.com/ysonbrian/block-smart-contract/tree/master/kip17) 있으니 참고하세요!
 >
-> NFT 컨트랙트 주소: 0x359dabb503961b61b2415a1cce4d96f0f6afe2c76961ac405c3918fc121e2815
+> NFT 주소: 0x359dabb503961b61b2415a1cce4d96f0f6afe2c76961ac405c3918fc121e2815
 >
 > [클레이튼 baobab 결과](https://baobab.scope.klaytn.com/tx/0x359dabb503961b61b2415a1cce4d96f0f6afe2c76961ac405c3918fc121e2815?tabId=inputData)

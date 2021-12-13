@@ -3,7 +3,7 @@ date: '2021-11-16'
 title: '비트코인 • 블록체인 작동 원리'
 categories: ['BlockChain']
 summary: '비트코인 그것은 무엇인가?'
-thumbnail: './block3.jpg'
+thumbnail: './block1.jpeg'
 ---
 
 # 비트코인 • 블록체인 작동 원리

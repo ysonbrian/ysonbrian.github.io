@@ -28,9 +28,9 @@ thumbnail: './block7.jpg'
 
 #### ERC-721
 
-![](https://thumb2.photo.mybox.naver.com/3472467147093553192?type=m1280_1280_2&authtoken=hTagssb5xIC27K9RMsT1FAI=&filelink=6QpevoJt/7NdgdxDF4N25+TK/DdEqZOhqwdQg5Vy8AzMaD55s5rWRky89b3iSjakoW4LPDIazUqisIwojtMWogI=)
+![TestImage](../../ydblog/contents/ydpicture.jpg)
 
-테스트에 사용될 NFT 사진이다.. 정말 테스트용으로만 쓰이는 사진이기 때문에 절대 사용하지 마세요! 괜히 불법으로 사용하다가 적발되면 문제가... 가 아니라 이건 [Unsplash][https://unsplash.com/] 사이트 에서 랜덤한 사진을 가져온 것이므로 이 글을 보는 여러분도 아무 사진으로 하시면 되겠습니다~ 🤗
+테스트에 사용될 NFT 사진이다.. 정말 테스트용으로만 쓰이는 사진이기 때문에 절대 사용하지 마세요! 괜히 불법으로 사용하다가 적발되면 문제가... 가 아니라 이건 [Unsplash](https://unsplash.com/) 사이트 에서 랜덤한 사진을 가져온 것이므로 이 글을 보는 여러분도 아무 사진으로 하시면 되겠습니다~ 🤗
 
 ```
 # 아무 폴더를 생성후 로컬 명령프롬프트 위치를 해당 폴더로 이동
@@ -96,21 +96,25 @@ module.exports = function (deployer) {
 > 새로운 터미널을 키고 ganache-cli를 입력하고 실행 해보자
 > ganache-cli
 > 그리고 전에 Truffle 폴더의 경로로 명령 프롬프트를 키고 다음 절 을 실행하자!
+>
 > truffle migrate --compile-all --network ganache
 
 <img src="../../ydblog/contents/nftBegin.png" width="500" height=500> <img src="../../ydblog/contents/nftMigrate.gif" width="1000" height=500>
 
 ```
+차례대로 입력해보자
 truffle console --network ganache
-Instance.name()
+instance.name()
 // 'MyNFTs'
-Instance.symbol()
-차례대로 입력하면 다음과 같은 결과가 나오면 MyNFTs.sol 이 잘 작동된다는 뜻이다!
-Ganache를 실행하여 다음 구절도 실행하자
-instance.mintNFT("../../ERC721/nft.json", { from: accounts[0] })
-✨ 여기서 사용한 json 파일은 로컬환경에서 만들어준 파일이므로 원래는 클라우드에 저장하여 uri 값을 넣어줘야 하므로 실제로는 이렇게 하면 안된다 ✨
-✨ 단순히 테스트용으로 진행하기 때문에 이렇게 하는점 이해해주세요! 😉 ✨
+instance.symbol()
+// 'MNFT'
+다음과 같은 결과가 나오면 MyNFTs.sol 이 잘 작동된다는 뜻이다!
+instance.mintNFT("https://ipfs.io/ipfs/QmdwDwerocYHSQ2CRKuaDYDCSdTMi7v29sF13CJfLxSV3y?filename=nft.json", { from: accounts[0] })
 ```
+
+[IPFS](https://ipfs.io/)에 NFT화 하고 싶은 파일을 등록하여 mintNFT에 넣어주자!
+[테스트](https://ipfs.io/ipfs/QmdwDwerocYHSQ2CRKuaDYDCSdTMi7v29sF13CJfLxSV3y?filename=nft.json)용 으로 만든 파일은 여기서 확인 가능하다.
+image 링크를 확인하면 이미지 파일을 확인할 수 있다. 밑에 사진은 정상적으로 NFT 파일을 등록한 결과 이다.
 
 <img src="../../ydblog/contents/nftMiddle.png" width="500" height=200><img src="../../ydblog/contents/nftResult.png" width="500" height=500>
 

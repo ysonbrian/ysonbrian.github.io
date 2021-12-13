@@ -3,7 +3,7 @@ date: '2021-11-17'
 title: '다양한 암호화페와 가치'
 categories: ['BlockChain']
 summary: '다양한 암호화폐 그리고 화폐의 현재와 미래를 알아보자'
-thumbnail: './block1.jpeg'
+thumbnail: './block3.jpg'
 ---
 
 # 다양한 암호화폐와 가치

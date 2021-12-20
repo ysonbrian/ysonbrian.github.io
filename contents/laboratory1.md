@@ -13,8 +13,7 @@ thumbnail: './labPicture/lab1.webp'
 - 프로젝트 기간: 12.14.21 ~ 12.20.21
 - 프로젝트: OpenSea 클론코딩
 - 프로젝트 목표: OpenSea 홈페이지 클론 코딩 및 기능 구현
-
----
+- [전체코드](https://github.com/codestates/BEB_01_SolidiTeam)
 
 ## 설레는 프로젝트 시작... 그리고 예상치못한 상황
 

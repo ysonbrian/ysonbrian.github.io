@@ -67,6 +67,8 @@ const CategoryList: FunctionComponent<CategoryListProps> = function ({
             ? '💻'
             : name === 'BlockChain'
             ? '🔐'
+            : name === 'Laboratory'
+            ? '🧑🏻‍💻'
             : name === 'Etc'
             ? '📚'
             : '😎'}{' '}

@@ -1,5 +1,5 @@
 ---
-date: '2021-11-18'
+date: '2023-06-05'
 title: '블록체인의 합의 알고리즘'
 categories: ['BlockChain']
 summary: '다양한 합의 알고리즘을 알아보자'

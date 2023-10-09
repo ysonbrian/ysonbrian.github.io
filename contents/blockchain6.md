@@ -1,5 +1,5 @@
 ---
-date: '2021-12-11'
+date: '2023-07-05'
 title: 'Solidity를 이용한 가위바위보 게임'
 categories: ['BlockChain']
 summary: 'Solidity를 이용하여 가위바위보 게임을 만들어보고 개선 해보자!'

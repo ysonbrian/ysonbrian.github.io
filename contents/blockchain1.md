@@ -1,5 +1,5 @@
 ---
-date: '2021-11-16'
+date: '2023-05-16'
 title: '비트코인 • 블록체인 작동 원리'
 categories: ['BlockChain']
 summary: '비트코인 그것은 무엇인가?'

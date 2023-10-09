@@ -1,5 +1,5 @@
 ---
-date: '2021-12-12'
+date: '2023-07-27'
 title: 'Klaytn 개발 환경에서 NFT 개발'
 categories: ['BlockChain']
 summary: 'Klaytn 개발 환경에서 NFT 개발해보기'
@@ -14,7 +14,6 @@ thumbnail: './block8.jpg'
 ### KIP-17
 
 KIP-17은 카카오 자회사인 그라운드X 에서 클레이튼 프로토콜 위에 돌아가는 NFT를 말하는데 이것은 ERC-721과 같은 내용을 담고 있습니다.
-클레이튼에서 사용하는 Solidity의 버전은 0.5.6(2021년 12월 기준) 이므로 컴파일 버전을 수시로 확인해주세요!
 Solidity를 사용하기 편리한 Remix가 있는 것처럼 그라운드X는 [Klaytn IDE](https://ide.klaytn.com/) 를 사용합니다.
 오늘 개발은 Klaytn IDE를 사용해서 NFT를 만들겠습니다. 테스트넷 환경은 baobab 테스트넷을 사용하여 배포하므로 클레이튼 지갑이 필요합니다!
 지갑이 없으신분은 [Baobab](https://baobab.wallet.klaytn.com/create) 에서 지갑 생성하시고 KLAY Faucet 에서 생성한 지갑의 비밀키를 입력하면 테스트용 Klay을 얻을 수 있으니 준비 해주세요!

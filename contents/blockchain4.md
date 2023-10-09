@@ -1,5 +1,5 @@
 ---
-date: '2021-12-11'
+date: '2023-06-20'
 title: '니모닉 지갑 개발 해보기'
 categories: ['BlockChain']
 summary: '니모닉 지갑 개발 해보기'

@@ -44,7 +44,7 @@ const Footer: FunctionComponent = function () {
         </li>
       </FooterUnOrderList>
       <br />
-      <div> ©Youngduk Son • 2021</div>
+      <div> ©Youngduk Son • {new Date().getFullYear()}</div>
     </FooterWrapper>
   )
 }

@@ -1,5 +1,5 @@
 ---
-date: '2021-12-12'
+date: '2023-07-13'
 title: 'Truffle을 이용한 ERC-721 개발'
 categories: ['BlockChain']
 summary: 'Truffle을 이용한 ERC-721 개발해보기'
